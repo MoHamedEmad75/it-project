@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link  href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <title>log in page </title>
+    <link rel="stylesheet" href="style-pass-dark.css" />
+</head>
+<body>
+   
+    <span class="pass">
+        <h2>Enter your account</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="username" required>
+        <input type="password" id="password" placeholder="password" required>
+        <input type="submit" value="Log In ">
+    </form>
+    </span>
+
+
+
+
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("loginForm");
+        const usernameInput = document.getElementById("username");
+
+        form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const username = usernameInput.value;
+        localStorage.setItem("loggedInUser", username);
+        alert("Successful login :) !");
+        window.location.href = "logged-in-dark.html"; 
+    });
+  });
+    </script>
+
+</body>

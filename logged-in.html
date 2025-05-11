@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link  href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <title> All About Football </title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!--header-->
+    <div class="allpage">
+        <div class="firstofpage">
+            <div class="title">
+                <img class="logo-head" src="images/kora.jpg" />
+                <h3 >Kora Helwan</h3>
+            </div>
+            
+            <div class="linksoftop">
+                <a  href="logged-in-dark.html" >Enable dark mode</a>
+                <a href="third-page.html">Big Matches</a>
+                <a  href="#start">Leagues</a>
+                <a  href="logged-in-sec.html">Cups</a>
+                <a  href="#">Welcome To Our Site :)</a>
+            </div>
+        </div>
+    
+        <!--afterrrrr-->
+        <div class="landing-page">
+            <div class="landing-page-left-section">
+              <h1>Football</h1>  
+              <p>Football is a team sport played between two teams of eleven players each with a spherical ball. With 250 million players in more than 200 countries, football is the most popular sport in the world. Football is played on a rectangular field with two goals at either side. The object of the game is to score goals by kicking the ball into the goal.</p>
+                 <form>
+                   <div class="landing-page-search">
+                   <input type="text" id="searchInput" placeholder="search for....?" list="footballOptions">
+                   <datalist id="footballOptions">
+                    <option value="Premier league"></option>
+                    <option value="La Liga"></option>
+                    <option value="Seria A"></option>
+                    <option value="Bundesliga"></option>
+                    <option value="Ligue 1"></option>
+                    <option value="World Cup"></option>
+                    <option value="UEFA Champions League"></option>
+                    <option value="CAF Champions League"></option>
+                    <option value="Africa Cup of Nations"></option>
+                    <option value="Matches"></option>
+                   </datalist>
+                    <button  id="searchButton">Search</button>
+                    <input type="reset" value="reset">
+              </div> 
+              </form>
+            </div>
+            <div> <img src="images/Football_in_Bloomington,_Indiana,_1995.jpg"/> </div>
+        </div>
+    </div>
+    <section>
+        <!--leeeeagues-->
+        <h1 class="head" id="start">First: Top five leagues:</h1>
+        <div class="leagues">
+                <div id="permier">
+                    <h2 class="Headofleague">Premier league</h2>
+                 <span>
+                    <img class="logo-head-e" src="images/permier.png" /> 
+                    <p>The Premier League is a professional association football league in England and the highest level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League (EFL). Seasons usually run from August to May, with each team playing 38 matches.</p>
+                 </span>  
+                </div>
+                <div  id="laliga">
+                    <h2 class="Headofleague2">La Liga</h2>
+                    <span>
+                        <img class="logo-head-e" src="images/lalig.png" />
+                        <p>The Campeonato Nacional de Liga de Primera División, commonly known as the Primera División or La Liga and officially known as LaLiga EA Sports for sponsorship reasons, is a professional association football league in Spain and the highest level of the Spanish football league system. It is controlled by the Liga Nacional de Fútbol Profesional and it is contested by 20 teams over a 38-matchday period.</p>   
+                    </span>
+                </div>
+                <div id="seria">
+                    <h2 class="Headofleague">Seria A</h2>
+                   <span>
+                      <img class="logo-head-e" src="images/seriaa.jpg" />
+                      <p>The Italian league, known as Serie A for short and Serie A TIM for sponsorship reasons, is the highest-level professional football league in Italy and is considered one of the elite leagues in the world. It was first launched in 1898, it is contested by 20 teams over a 38-matchday period.</p>
+                   </span> 
+                </div>
+                <div id="bunds">
+                    <h2 class="Headofleague2"> Bundesliga</h2>
+                    <span>
+                      <img class="logo-head-b" src="images/bunds.png" />
+                        <p>The Bundesliga is the professional football league in Germany and is considered one of the world's elite leagues. It is considered the country's premier division, being the pinnacle of the German football 
+                            league system. It is contested by 18 teams each team playes 34 matches.</p>
+                     </span> 
+                    </div>
+            <div class="a" id="ligue" >
+                <h2 id="frh" >Ligue 1</h2>
+                <span>
+                   <img class="logo-head-e" src="images/Ligue1_logo.png" />
+                    <p>
+                        The French Ligue 1 is the professional football league competition in France. It was established in its current format in 2002 and is considered one of the world's elite leagues.
+                        The French league starts in August and ends in May. The number of clubs has been reduced from 20 to 18 starting with the 2023–24 season, with each team playing 34 matches, for a total of 306 matches per season.
+                    </p>
+                 </span>
+            </div>
+        </div>
+    </section>
+        <div class="linktonewpage"><a  href="logged-in-sec.html">Next page</a></div>
+        <footer class="footer">
+            <span> <p>Send your feed back</p><a href="feedback-logged.html">Here</a> </span>
+           <div> <a href="https://www.facebook.com/share/g/15XUrUPDpx/" target="_blank"><img src="images/facebook.png" /></a> </div>
+        </footer>
+    <!---->
+<script>
+   const items = {
+      "Premier league": "#permier",
+      "La Liga": "#laliga",
+      "Seria A": "#seria",
+      "Bundesliga": "#bunds",
+      "Ligue 1": "#ligue",
+      "World Cup": "logged-in-sec.html#worldcup",
+      "UEFA Champions League": "logged-in-sec.html#uefa",
+      "Champions League": "logged-in-sec.html#uefa",
+      "CAF Champions League": "logged-in-sec.html#caf",
+      "CAF": "logged-in-sec.html#caf",
+      "Africa Cup of Nations": "logged-in-sec.html#afcon",
+      "Matches": "logged-in-third.html#match",
+    };
+    const input = document.getElementById('searchInput');
+    const lastSearch = localStorage.getItem("lastSearch");
+    if (lastSearch) {
+      input.value = lastSearch;
+    }
+    
+     function doSearch() {
+      const query = input.value.trim();
+      localStorage.setItem("lastSearch", query); 
+      if (items[query]) {
+        window.location.href = items[query];
+      } else {
+        alert("No result found :( ");
+      }
+    }
+    document.getElementById('searchButton').addEventListener('click', doSearch);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        doSearch();
+        }
+    });
+    
+</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link  href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <title> All About Football 3</title>
+    <link rel="stylesheet" href="styles-dark.css" />
+</head>
+<body>
+    <div class="firstofpage2">
+        <div class="title">
+            <img class="logo-head" src="images/kora.jpg" />
+            <h3 >Kora Helwan</h3>
+        </div>
+        
+        <div class="linksoftop" id="sss">
+            <a  href="third-page.html" >Enable light mode</a>
+            <a  href="sec-page-dark.html">Previous page</a>  
+        </div>
+    </div>
+
+    <section class="matches">
+        <h2><mark>Most waited matches:</mark></h2>
+        <section class="tab" id="match">
+           
+             <div class="ahly">
+                <h2>Ahly🆚Zamalek</h2>
+                <span>
+                    <img class="phototworeal" src="images/avz.jpg">
+                    <p>On 9 February 1917, the first match between Zamalek and Al Ahly. The two teams faced each other 251 matches, Al Ahly won 112 match, Zamalek won 63 match and The two teams tied 76 times.</p>
+                </span>
+             </div>
+
+             <div>
+                <h2>Real Madrid🆚Barcelona</h2>
+                <span>
+                    <img class="phototworeal" src="images/realbar.jpg">
+                    <p>On May 13 1902, the first match between Real Madrid and Barcelona. The two teams faced each other 260 matches, Real Madrid won 106 match, Barcelona won 103 match and The two teams tied 51 times.</p>
+                </span>
+             </div>
+             <div>
+                <h2>Liverpool🆚Manchester United</h2>
+                <span>
+                    <img class="phototworeal" src="images/liverman.jpg">
+                    <p>On 28 April 1894, the first match match between Liverpool and Manchester United. The two teams faced each other 206 matches, Liverpool won 67 match, Manchester United won 80 match and The two teams tied 59 times </p>
+                </span>
+             </div>
+            </section>
+    </section>
+    <hr>
+   
+    <section class="topwatch">
+        <h2>In these matches there were many memorable moments such as:</h2>
+        <div class="world">
+            <h2>First:</h2>
+            <p>On November 27, 2020, there was a CAF Champions League final between Al-Ahly and Zamalek, as Zamalek had not won the tournament since 2002, and Al-Ahly had not won it since 2013. This match was like a war between the two teams, but the match ended with Al-Ahly winning 2-1 with goals from Amr El-Sulaya and Magdy Afsha.</p>
+            <p>Afsha's goal was the kadia moomken:</p>
+            <div> <audio controls>
+                <source src="images/القاضيه ممكن(MP3_160K).mp3" type="audio/mpeg">
+            </audio></div>
+            <button class="btn" onclick="hideFunction()">Hide and show the goal</button>
+            <div class="vid" id="videoo">
+                <video controls muted>
+                    <source src="images/elkad.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </div>
+        <div class="world">
+            <h2>Second:</h2>
+            <p>On March 5, 2023, Liverpool won 7-0, their biggest ever competitive victory against Manchester United. Egyptian Pharaoh Mohamed Salah scored two goals but also set up one of the match's most beautiful goals:</p>
+           
+             <div class="vid" id="vidman">
+                <video controls >
+                    <source src="images/VID_20250509_140520.mp4" type="video/mp4">
+                </video>
+                </div>
+                <button class="btn" onclick="removesecFunction()">Remove video if you are man united fan</button>
+        </div>
+        <div class="world">
+            <h2>Third:</h2>
+            <p>On April 23, 2017, El Clásico was the most anticipated match in the world, and Barcelona succeeded in snatching victory with a goal by Lionel Messi in front of Cristiano Ronaldo in the final minutes of the match.</p>
+          
+            <div class="vid" id="vidremo" >
+                <video controls >
+                    <source src="images/video_2025-05-09_14-44-06.mp4" type="video/mp4">
+                </video>
+                </div>
+                <button class="btn" onclick="removeFunction()">Remove video if you are madridista</button>
+
+            
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+ <footer class="footer">
+        <div> <p>Send your feed back</p><a href="feedback.html">Here</a> </div>
+       <div> <a href="https://www.facebook.com/share/g/15XUrUPDpx/" target="_blank"><img src="images/facebook.png" /></a> </div>
+ </footer>  
+<script>
+    function hideFunction() {
+  var x = document.getElementById("videoo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function removeFunction() {
+  const element = document.getElementById("vidremo");
+  element.remove();
+}
+function removesecFunction() {
+  const element = document.getElementById("vidman");
+  element.remove();
+}
+ </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
